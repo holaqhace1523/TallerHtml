@@ -1,0 +1,134 @@
+:root {
+    --color-primary: #0f0f0f;
+    --color-accent: #e50914;
+    --color-bg: #111111;
+    --color-text: #ebeaea;
+    --space: 1rem;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+header {
+    background-color: var(--color-accent);
+    text-align: center;
+    padding: 2rem;
+    border: 4px solid rgb(241, 240, 240);
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+nav a {
+    color: rgb(224, 162, 133);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+#Inicio {
+    width: 80%;
+    text-align: center;
+    padding: 2rem;
+}
+.inicio-contenedor {
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+}
+.btn {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: white;
+    color: var(--color-accent);
+}
+.btn:focus {
+    outline: 4px solid white;
+    outline-offset: 3px;
+}
+.card {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: var(--space);
+}
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1 1 280px;
+}
+.card {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: var(--space);
+    flex: 1 1 400px;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    max-width: 600px;
+}
+form button {
+    grid-column: 2;
+    justify-self: start;
+    padding: 0.5rem 1rem;
+}
+form button {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+}
+form textarea {
+    width: 100%;
+    resize: vertical;
+}
+footer {
+    background-color: var(--color-accent);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid white;
+}
+.cards {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+
+    .cards {
+        flex-direction: column;
+    }
+
+}
+.card img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
